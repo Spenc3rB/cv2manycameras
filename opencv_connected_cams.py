@@ -7,10 +7,8 @@ for i in range(100):
         cap = cv2.VideoCapture(i)
         if cap is not None and cap.isOpened():
             openCvVidCapIds.append(i)
-        # end if
+        
     except:
         pass
-    # end try
-# end for
-
+        
 print(str(openCvVidCapIds))
