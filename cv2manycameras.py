@@ -1,14 +1,14 @@
 import cv2
 
-openCvVidCapIds = []
+cvCapIDs = []
 
 for i in range(100):
     try:
         cap = cv2.VideoCapture(i)
         if cap is not None and cap.isOpened():
-            openCvVidCapIds.append(i)
+            cvCapIDs.append(i)
         
     except:
         pass
         
-print(str(openCvVidCapIds))
+print(str(cvCapIDs))
